@@ -17,8 +17,8 @@ func moveMouseEvery5Minutes() {
 	for {
 		time.Sleep(30 * time.Second)
 		fmt.Println("Moving mouse")
-		newX := sx - 1
-		robotgo.MoveMouse(newX, sy)
-		fmt.Println("move mouse", newX, sy)
+		sx = sx - 1
+		robotgo.MoveMouse(sx, sy)
+		fmt.Println("move mouse", sx, sy)
 	}
 }
