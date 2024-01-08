@@ -50,7 +50,7 @@ func moveMouseEvery5Minutes() {
 		if status == "INACTIVE" {
 			break
 		}
-		time.Sleep(30 * time.Second)
+		time.Sleep(4 * time.Minute)
 		//log.Println("Moving mouse")
 		sx = sx - 1
 		robotgo.MoveMouse(sx, sy)
